@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Motivation Lab - Quotes Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-image: url('nevergiveup.jpg');
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover no-repeat;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: #e63946;
+    }
+
+    .category {
+      padding: 60px 20px;
+    }
+
+    .category h3 {
+      font-size: 32px;
+      border-bottom: 2px solid #e63946;
+      margin-bottom: 20px;
+    }
+
+    .quote-card {
+      background: #111;
+      padding: 20px;
+      border-left: 5px solid #e63946;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .quote-card p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #e63946;
+      border: none;
+      padding: 10px 15px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .top-btn:hover {
+      background: #c62828;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Motivation Lab</h1>
+    <nav>
+      <a href="#success">Success</a>
+      <a href="#hard">Hard Times</a>
+      <a href="#discipline">Discipline</a>
+      <a href="#confidence">Confidence</a>
+      <a href="#islam">Islam</a>
+      <a href="#daily">Daily Grind</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fuel Your Fire – One Quote at a Time</h2>
+  </section>
+
+  <section id="success" class="category">
+    <h3>Success</h3>
+    <div class="quote-card"><p>"Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill</p></div>
+    <div class="quote-card"><p>"Don't watch the clock; do what it does. Keep going." – Sam Levenson</p></div>
+  </section>
+
+  <section id="hard" class="category">
+    <h3>Hard Times</h3>
+    <div class="quote-card"><p>"The struggle you're in today is developing the strength you need for tomorrow." – Unknown</p></div>
+    <div class="quote-card"><p>"Hard times may have held you down, but they will not last forever." – Unknown</p></div>
+  </section>
+
+  <section id="discipline" class="category">
+    <h3>Discipline</h3>
+    <div class="quote-card"><p>"Discipline is doing what needs to be done, even when you don’t feel like doing it." – Unknown</p></div>
+    <div class="quote-card"><p>"We must all suffer one of two things: the pain of discipline or the pain of regret." – Jim Rohn</p></div>
+  </section>
+
+  <section id="confidence" class="category">
+    <h3>Confidence</h3>
+    <div class="quote-card"><p>"Believe you can and you're halfway there." – Theodore Roosevelt</p></div>
+    <div class="quote-card"><p>"Your only limit is your mind." – Unknown</p></div>
+  </section>
+
+  <section id="islam" class="category">
+    <h3>Islam</h3>
+    <div class="quote-card"><p>"So verily, with hardship, there is relief." – Quran 94:6</p></div>
+    <div class="quote-card"><p>"Indeed, Allah is with the patient." – Quran 2:153</p></div>
+  </section>
+
+  <section id="daily" class="category">
+    <h3>Daily Grind</h3>
+    <div class="quote-card"><p>"You don’t have to be great to start, but you have to start to be great." – Zig Ziglar</p></div>
+    <div class="quote-card"><p>"Small steps every day." – Unknown</p></div>
+  </section>
+
+  <button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Top ↑</button>
+
+  <footer>
+    &copy; 2025 The Motivation Lab | Follow us @TheMotivationLab
+  </footer>
+
+</body>
+</html>
